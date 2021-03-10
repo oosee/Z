@@ -1,0 +1,10 @@
+#!name=Cookies
+#!desc=会话模块
+#!system=ios
+
+[Script]
+京东签到Cookie = type=http-request,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
+IQIY签到Cookie = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,script-update-interval=0
+腾讯签到Cookie = type=http-request,pattern=^https?:\/\/access.video.qq.com\/user\/auth_refresh,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js,script-update-interval=0
+喜马拉雅Cookie = type=http-request,pattern=^https?:\/\/.*\/mobile\-user\/homePage\/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js,script-update-interval=0
+网易音乐Cookie = type=http-request,pattern=^https?:\/\/music.163.com\/weapi\/user\/level,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,script-update-interval=0

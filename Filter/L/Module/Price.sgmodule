@@ -1,0 +1,3 @@
+#http-response ^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) script-path=https://raw.githubusercontent.com/oosee/Z/master/Script/J_Price.js, requires-body=true, timeout=10, tag=京东比价
+#http-request ^https?:\/\/.+/amdc/mobileDispatch script-path=https://raw.githubusercontent.com/oosee/Z/master/Script/T_Price.js, requires-body=true, timeout=10, tag=淘宝比价
+#http-response ^https?:\/\/trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail script-path=https://raw.githubusercontent.com/oosee/Z/master/Script/T_Price.js, requires-body=true, timeout=10, tag=淘宝比价

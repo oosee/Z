@@ -1,0 +1,5 @@
+# 京东比价
+^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/oosee/Z/master/Script/J_Price.js
+# 淘宝比价
+^https?:\/\/.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/oosee/Z/master/Script/T_Price.js
+^https?:\/\/trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/oosee/Z/master/Script/T_Price.js

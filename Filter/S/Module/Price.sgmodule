@@ -1,0 +1,8 @@
+#!name=Price
+#!desc=比价模块
+#!system=ios
+
+[Script]
+京东比价 = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/oosee/Z/master/Script/J_Price.js,script-update-interval=0
+淘宝比价 = type=http-request,pattern=^https?:\/\/.+/amdc/mobileDispatch,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/oosee/Z/master/Script/T_Price.js,script-update-interval=0
+淘宝比价 = type=http-response,pattern=^https?:\/\/trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/oosee/Z/master/Script/T_Price.js,script-update-interval=0

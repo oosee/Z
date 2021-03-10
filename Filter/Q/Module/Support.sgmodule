@@ -1,0 +1,10 @@
+# 抖音广告
+^https?:\/\/.*\.amemv\.com\/aweme\/v\d\/(feed|mix\/aweme|aweme\/post|(multi\/)?aweme\/detail|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-response-body https://raw.githubusercontent.com/Choler/Surge/master/Script/douyin.js
+# 微信广告
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/oosee/Z/master/Script/Wechat.js
+# YouTube
+^https?:\/\/.+?\.googlevideo\.com\/.+&(oad|ctier)=(?!A) url script-response-body https://raw.githubusercontent.com/Choler/Surge/master/Script/YouTube.js
+# Sur-BoxJs
+^https?:\/\/boxjs\.com url script-analyze-echo-response https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js
+# Sub-Store
+^https?:\/\/sub\.store url script-analyze-echo-response https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js

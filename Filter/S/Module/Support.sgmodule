@@ -1,0 +1,10 @@
+#!name=Support
+#!desc=辅助模块
+#!system=ios
+
+[Script]
+抖音广告 = type=http-response,pattern=^https?:\/\/.*\.amemv\.com\/aweme\/v1\/(feed|mix\/aweme|aweme\/post|(multi\/)?aweme\/detail|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/douyin.js,script-update-interval=0
+微信广告 = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/oosee/Z/master/Script/Wechat.js,script-update-interval=0
+YouTube = type=http-request,pattern=^https?:\/\/.+?\.googlevideo\.com\/.+&(oad|ctier)=(?!A),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/YouTube.js,script-update-interval=0
+Sur-BoxJs = type=http-request,pattern=^https?:\/\/boxjs.com,requires-body=1,timeout=120,max-size=0,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js,script-update-interval=0
+Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,requires-body=1,timeout=120,max-size=131072,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,script-update-interval=0

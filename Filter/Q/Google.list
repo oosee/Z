@@ -1,0 +1,13 @@
+# > Youtube Music
+USER-AGENT,*YouTubeMusic*,Google
+USER-AGENT,*com.google.ios.youtubemusic*,Google
+# > Youtube
+USER-AGENT,*youtube*,Google
+USER-AGENT,YouTube*,Google
+DOMAIN-KEYWORD,youtube,Google
+DOMAIN,yt3.ggpht.com,Google
+DOMAIN-SUFFIX,app-measurement.com,Google
+DOMAIN-SUFFIX,googlevideo.com,Google
+DOMAIN-SUFFIX,gvt2.com,Google
+DOMAIN-SUFFIX,youtu.be,Google
+DOMAIN-SUFFIX,ytimg.com,Google
